@@ -35,10 +35,25 @@ header h1 {
   font-weight: bold;
 }
 
-/* Menu de Navegação (Desktop) */
 .navbar {
   display: flex;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
   gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ff9900;
 }
 
 /* Menu no Mobile */
@@ -353,7 +368,7 @@ header h1 {
 /* Contato */
 .contact {
   padding: 80px 20px;
-  background: rgba(0, 0, 0, 0.8);
+  background: linear-gradient(90deg, rgb(28, 30, 46) 17%, rgb(6, 12, 44) 100%);
   text-align: center;
 }
 
