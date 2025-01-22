@@ -56,20 +56,69 @@ header h1 {
   color: #ff9900;
 }
 
-/* Menu Hambúrguer */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 4px;
-  cursor: pointer;
-}
+/* Menu no Mobile */
+@media (max-width: 768px) {
+  /* Esconde a barra de navegação fora da tela por padrão */
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    left: -100%; /* Menu começa fora da tela */
+    width: 250px; /* Largura do menu */
+    height: 100%; /* Altura total da tela */
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo preto translúcido */
+    padding: 20px;
+    z-index: 1000;
+    transition: left 0.3s ease-in-out; /* Animação para deslizar */
+    overflow-y: auto; /* Permite rolagem se necessário */
+  }
 
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background: white;
-  border-radius: 2px;
-  transition: 0.3s;
+  /* Mostra o menu quando está ativo */
+  .navbar.active {
+    left: 0; /* Move o menu para dentro da tela */
+  }
+
+  /* Ícone de hambúrguer visível no celular */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Ícone no canto superior direito */
+    z-index: 1100; /* Acima do menu */
+  }
+
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+  /* Estilização para os links no menu lateral */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+  }
+
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    transition: color 0.3s;
+  }
+
+  .nav-links li a:hover {
+    color: #ff9900;
+  }
 }
 
 /* Hero Section */

@@ -15,11 +15,11 @@ document.querySelectorAll("a[href^='#']").forEach((anchor) => {
   });
 });
 
-// Menu hambúrguer
+// Seleciona o hambúrguer e o menu
 const hamburger = document.querySelector(".hamburger");
 const navbar = document.querySelector(".navbar");
 
+// Adiciona o evento de clique
 hamburger.addEventListener("click", () => {
-  console.log("Hambúrguer clicado!"); // Debug
   navbar.classList.toggle("active");
 });
