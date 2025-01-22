@@ -9,7 +9,7 @@ document.querySelectorAll("a[href^='#']").forEach((anchor) => {
       e.preventDefault();
       targetElement.scrollIntoView({
         behavior: "smooth",
-        block: "start", // Ajuste para centralizar melhor
+        block: "start",
       });
     }
   });
@@ -21,5 +21,6 @@ const navbar = document.querySelector(".navbar");
 
 // Adiciona o evento de clique
 hamburger.addEventListener("click", () => {
+  console.log("Hambúrguer clicado!"); // Verifique no console se o clique foi detectado
   navbar.classList.toggle("active");
 });
