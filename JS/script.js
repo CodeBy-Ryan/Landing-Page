@@ -20,5 +20,6 @@ const hamburger = document.querySelector(".hamburger");
 const navbar = document.querySelector(".navbar");
 
 hamburger.addEventListener("click", () => {
+  console.log("Hambúrguer clicado!"); // Debug
   navbar.classList.toggle("active");
 });
