@@ -4,8 +4,7 @@
 
 <p align="center">Lading-Page - @Code By Ryan</p>
 
-![Lading Page](https://github.com/user-attachments/assets/3e53fe8e-481a-4629-a1f9-1953000ebf31)
-
+![Lading Page](https://github.com/user-attachments/assets/9d1a792a-b967-40e8-b80e-fa9216a846bf)
 ## 🚀 Apresentação
 
 Este projeto foi desenvolvido por meio de estudos autodidatas no YouTube, onde criei uma landing page responsiva para nincho de qualquer produtos.
